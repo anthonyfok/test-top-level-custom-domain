@@ -9,7 +9,7 @@ on:
 
 jobs:
   jekyll:
-    name: Jekyll with AsciiDoc
+    name: Build main site and pull in sub-sites (Jekyll with AsciiDoc)
     runs-on: ubuntu-20.04
 
     steps:
@@ -25,7 +25,7 @@ jobs:
           cat /proc/cpuinfo
           git branch -a
           pwd
-          ls -l /usr/local/bin/bundle
+          ls -l /usr/local/bin/bundle || true
           #ls -lR
           df -h
           free -h
